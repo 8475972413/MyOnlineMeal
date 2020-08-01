@@ -1,0 +1,240 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0em;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+
+/* logo and img : logo and Image*/
+
+#logo{
+    margin: 10px 34px;
+    
+}
+#logo img{
+    
+    border-radius:50% ;
+    margin: 5px 4px;
+    height: 70px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    position: relative;
+    top: 0em;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+/* Navigation Bar: List styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+   
+   
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    color: ivory;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home section */
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url('bd2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+
+#home h1{
+    color: white;
+    text-align: center; 
+    font-family: 'Baloo Bhai 2', cursive;   
+}
+#home p{
+    color: white;
+    text-align: center;  
+    font-size: 1.5rem; 
+    font-family: 'Indie Flower', cursive;
+}
+/* Sevices Center  */
+
+
+.services-container{
+    background-color: white;
+}
+
+
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 10px 6px;
+    border-radius: 23px;
+    background-color: rgb(247, 234, 234);
+
+
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    
+
+}
+#services .box img:hover{
+    transform: scale(1.2);
+    
+
+}
+
+#services .box p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+
+}
+
+
+/* Clinets section */
+#clients-section{
+    height: 400px;
+    
+}
+#clients-section::before{
+    content: " ";
+    position: absolute;
+    background: url('bd1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#clients{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 136px;
+   
+}
+
+.clients-item{
+   
+    padding: 34px;
+}
+
+
+
+/* Contact us styling */
+#contact{
+   
+    height: 500px;
+}
+#contact .form-group{
+    padding: 10px;
+    
+}
+
+ #contact-box{
+    border: 2px rgb(248, 234, 234) solid;
+    border-radius: 44px;
+    margin:0px 700px;
+    padding: 25px;
+    background-color:  rgb(170, 200, 224);
+  
+}
+
+/* Footer styling */
+footer{
+    background-color: rgb(138, 135, 135);
+}
+
+/* Utility classes */
+.h-primary{
+        font-size: 4.8rem;
+        padding: 12px;
+        font-family: 'Indie Flower', cursive;
+
+    }
+
+.h-secondary{
+        font-size:2.5rem;
+        padding: 12px;
+        font-family: 'Indie Flower', cursive;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
